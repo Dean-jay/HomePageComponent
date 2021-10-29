@@ -1,0 +1,94 @@
+:root {
+  --header-height: 3em;
+}
+/* 미니멈 설정도 해줘야 한다. */
+@media screen and (max-width: 625px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav__button__container {
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 626px) {
+  .hidden {
+    display: none;
+  }
+}
+*,
+body {
+  margin: 0;
+}
+body {
+  width: 100%;
+}
+.header {
+  display: flex;
+  font-size: medium;
+  width: 100vw;
+  background-color: slateblue;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.nav__hide {
+  width: 100%;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  width: 40%;
+  height: var(--header-height);
+  text-align: left;
+  align-items: center;
+}
+.logo__icon,
+.logo__name {
+  margin-left: 10px;
+}
+
+.nav__button__container {
+  width: 100%;
+  display: flex;
+}
+
+.button__link__container {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav__button {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+
+  /* text center in  div box */
+  line-height: var(--header-height);
+  vertical-align: middle;
+  text-align: center;
+}
+
+span {
+  cursor: pointer;
+}
+.material-icons.orange600 {
+  color: #fb8c00;
+}
+
+.menu {
+  position: absolute;
+  top: 0.5em;
+  padding-right: 10px;
+  width: 100%;
+  text-align: right;
+}
